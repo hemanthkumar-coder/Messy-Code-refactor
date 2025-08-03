@@ -1,9 +1,11 @@
 const express = require("express");
 const cors = require("cors");
+const morgan = require("morgan")
 const { port } = require("./config/envConfig");
 const { connectToDb } = require("./config/dbConfig");
 const userRouter = require("./routes/userRoutes");
 const app = express();
+app.use(morgan("tiny"))
 app.use(cors());
 app.use(express.json());
 

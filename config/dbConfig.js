@@ -15,4 +15,4 @@ async function connectToDb() {
   }
 }
 
-module.exports = { connectToDb, sequelize };
+module.exports = { connectToDb, sequelize }

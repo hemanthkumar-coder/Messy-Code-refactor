@@ -1,4 +1,5 @@
 # Steps to Test project
+
 -clone this repo to your machine
 
 -open terminal and enter below command
@@ -10,14 +11,14 @@
 
 There are some sample data inserted in the DataBase.
 
-
-
 # OVERVIEW
-*   I refactored the whole code using nodejs
-*   I chose Node.js with Express because it offers non-blocking,event-driven          architecture, which is ideal for building scalable and high-performance web applications. 
-*   Node.js also has a large ecosystem, fast development cycles, and is well-suited for handling asynchronous operations, making it a great choice for modern web APIs compared to traditional Python frameworks.
+
+- I refactored the whole code using nodejs
+- I chose Node.js with Express because it offers non-blocking,event-driven architecture, which is ideal for building scalable and high-performance web applications.
+- Node.js also has a large ecosystem, fast development cycles, and is well-suited for handling asynchronous operations, making it a great choice for modern web APIs compared to traditional Python frameworks.
 
 # Issues I Noticed
+
 - In the Legacy python code response is not being returned in JSON format.
 
 - Password is stored in the Database Directly
@@ -48,7 +49,8 @@ There are some sample data inserted in the DataBase.
 
 -Response is sent in JSON format which can be used by frontend application to use the data.
 
+- Added Logging in project using morgan package
+
 - I used cors(CrossOrigin Resource Sharing) to make production ready project
 
 - Several functionality can be implemented for rate-limiting and caching,etc as just refactored the but havent implemented new features
-

@@ -10,12 +10,6 @@ const checkValidEmail = (email) => {
 const createUserContoller = async (req, res) => {
   try {
     const reqBody = req.body;
-    if (!checkValidEmail(req.body.email)) {
-      return res.status(400).json({
-        success: false,
-        message: "Invalid email address",
-      });
-    }
     const user = await User.create(reqBody);
     if (!user) {
       return res.status(400).json({
